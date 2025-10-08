@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Текстовий файл для зберігання інформації про pull requests
+pull-requests.txt
