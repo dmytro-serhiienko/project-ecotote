@@ -1,23 +1,22 @@
 /* Контейнер для мобільних пристроїв */
 .container {
-  min-width: 320px;
+  max-width: 320px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 20px;
 }
 /* Контейнер для таблету */
 @media only screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    max-width: 768px;
     padding: 0 32px;
-    margin: 0 auto;
   }
 }
 /* Контейнер для десктопу */
 @media screen and (min-width: 1440px) {
   .container {
-    min-width: 1440px;
-    padding: 0px 64px;
-    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 64px;
   }
 }
 
