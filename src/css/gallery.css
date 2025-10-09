@@ -51,7 +51,7 @@
 
 @media screen and (min-width: 1440px) {
   .gallery-title {
-    font-size: 48px;    
+    font-size: 48px;
   }
   .gallery-grid {
     grid-template-columns: repeat(3, 1fr);

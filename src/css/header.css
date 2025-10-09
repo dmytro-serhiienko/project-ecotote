@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   background-color: #75d281;
   padding: 14px 0;
 }
@@ -29,7 +30,7 @@
   display: none;
 }
 
-.main-nav__list {
+.main-nav-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -72,13 +73,13 @@
     display: block;
   }
 
-  .main-nav__list {
+  .main-nav-list {
     display: flex;
     gap: 32px;
   }
 
-  .main-nav__link,
-  .contacts__link {
+  .main-nav-link,
+  .contacts-link {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
@@ -88,21 +89,21 @@
     transition: color 0.3s ease;
   }
 
-  .main-nav__link:active,
-  .contacts__link:active {
+  .main-nav-link:active,
+  .contacts-link:active {
     color: #3ac04c;
   }
 
-  .main-nav__link.disabled,
-  .contacts__link.disabled {
+  .main-nav-link.disabled,
+  .contacts-link.disabled {
     color: #999;
     pointer-events: none;
     cursor: default;
     text-decoration: none;
   }
 
-  .main-nav__link::after,
-  .contacts__link::after {
+  .main-nav-link::after,
+  .contacts-link::after {
     content: '';
     position: absolute;
     left: 0;
@@ -113,15 +114,15 @@
     transition: width 0.3s;
   }
 
-  .main-nav__link:hover::after,
-  .main-nav__link:focus::after,
-  .contacts__link:hover::after,
-  .contacts__link:focus::after {
+  .main-nav-link:hover::after,
+  .main-nav-link:focus::after,
+  .contacts-link:hover::after,
+  .contacts-link:focus::after {
     width: 100%;
   }
 
-  .main-nav__link:active::after,
-  .contacts__link:active::after {
+  .main-nav-link:active::after,
+  .contacts-link:active::after {
     background-color: #3ac04c;
   }
 
@@ -129,8 +130,111 @@
     display: flex;
   }
 
-  .contacts__list {
+  .contacts-list {
     display: flex;
     gap: 16px;
+  }
+}
+
+/* !Mobile Modal Styles */
+.mobile-modal {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 320px;
+  height: 604px;
+  background-color: #75d281;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: visibility 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.mobile-modal.is-open {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mobile-modal-wrap {
+  width: 100vh;
+  height: 100%;
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-modal-nav {
+  padding-bottom: 32px;
+}
+
+.mobile-modal-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mobile-modal-contacts {
+  padding-top: 32px;
+}
+
+.mobile-modal-nav-link,
+.mobile-modal-contacts-link {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.mobile-modal-nav-link:hover,
+.mobile-modal-nav-link:focus,
+.mobile-modal-contacts-link:hover,
+.mobile-modal-contacts-link:focus {
+  color: #ffffff;
+}
+
+.mobile-modal-contacts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Прибирання іконки в бургер-меню */
+.burger-menu-icon-close {
+  display: none;
+}
+
+.burger-menu-button.is-open .burger-menu-icon-burger {
+  display: none;
+}
+
+.burger-menu-button.is-open .burger-menu-icon-close {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-modal {
+    min-width: 768px;
+    height: 100vh;
+  }
+
+  .mobile-modal-wrap {
+    padding: 32px 32px;
+  }
+}
+
+/* прибирає мобільну модалку на десктопі */
+@media screen and (min-width: 1440px) {
+  .mobile-modal {
+    display: none;
   }
 }
