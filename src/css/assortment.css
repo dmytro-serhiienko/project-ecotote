@@ -32,7 +32,7 @@
 .products-grid {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 64px !important;
     align-items: center;
     width: 100%;
     box-sizing: border-box;
@@ -164,6 +164,10 @@ color: #030a06;
 @media (max-width: 319px) {
     .section-title {
         font-size: 24px;
+    }
+    
+    .products-grid {
+        gap: 64px !important;
     }
     
     .product-card {
