@@ -1,7 +1,6 @@
 .gallery-title {
   font-family: 'Comfortaa', sans-serif;
   text-align: center;
-  color: #1c221e;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -9,12 +8,10 @@
   margin-bottom: 16px;
 }
 .gallery-subtitle {
-  font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
   text-align: center;
-  color: #1c221e;
   margin-bottom: 32px;
 }
 .gallery-grid {
@@ -71,13 +68,16 @@
   .gallery-title {
     font-size: 48px;
   }
+
   .gallery-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+
   .item1 {
     grid-row-start: 2;
   }
+
   .item2 {
     grid-row: span 2 / span 2;
   }
