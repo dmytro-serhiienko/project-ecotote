@@ -1,1 +1,382 @@
 /* ТВІЙ КОД */
+/*
+==================================================
+  ЕКОЛОГІЧНІ СУМКИ - СТИЛІ
+  Адаптивна верстка каталогу продукції
+==================================================
+*/
+
+/* ============================================
+   ЗМІННІ ТА КОНСТАНТИ
+   ============================================ */
+:root {
+    /* Колірна палітра */
+    --color-primary: #030a06;       /* Основний темно-зелений */
+    --color-secondary: #113916;     /* Вторинний зелений */
+    --color-background: #ebf8ec;    /* Світло-зелений фон */
+    --color-white: #ffffff;         /* Білий */
+    --color-black: #000000;         /* Чорний */
+    
+    /* Анімації та переходи */
+    --transition-base: 0.3s ease;   /* Базовий transition */
+}
+
+/* ============================================
+   БАЗОВІ СТИЛІ
+   ============================================ */
+
+/* Скидання стандартних стилів */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Стилі body */
+body {
+    font-family: "Fira Sans", sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    line-height: 1.6;
+}
+
+/* ============================================
+   LAYOUT ТА КОНТЕЙНЕРИ
+   ============================================ */
+
+/* Основний контейнер */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    /* Стандартні відступи для десктопу */
+    padding: 64px;
+}
+
+/* Секція каталогу товарів */
+.assortment section {
+    background-color: var(--color-background);
+    min-height: 100vh;
+}
+
+/* ============================================
+   ТИПОГРАФІКА
+   ============================================ */
+
+/* Заголовок секції */
+.section-title {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--color-black);
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+}
+
+/* ============================================
+   СІТКА ТА КОМПОНЕНТИ ТОВАРІВ
+   ============================================ */
+
+/* Сітка товарів (flex-layout з адаптивністю) */
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ============================================
+   КАРТОЧКА ТОВАРУ
+   ============================================ */
+
+/* Основна структура карточки */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    max-width: 310px;
+    min-height: 530px;
+}
+
+/* Контейнер зображення */
+.product-image-wrapper {
+    border-radius: 32px;
+    overflow: hidden;
+    width: 100%;
+    height: 372px;
+    background-color: #f5f5f5;
+    margin-bottom: 24px;
+}
+
+/* Зображення товару */
+.product-image {
+    border-radius: 32px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ============================================
+   КОНТЕНТ КАРТОЧКИ
+   ============================================ */
+
+/* Контейнер інформації про товар */
+.product-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    min-height: 113px;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+/* Назва товару */
+.product-title {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* Опис товару */
+.product-description {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* Ціна товару */
+.product-price {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-top: auto;
+    margin-bottom: 16px;
+}
+
+/* ============================================
+   КНОПКИ ТА ІНТЕРАКТИВНІ ЕЛЕМЕНТИ
+   ============================================ */
+
+/* Кнопка "Купити" */
+.product-button {
+    /* Зовнішній вигляд */
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    border-radius: 6px;
+    
+    /* Розміри та відступи */
+    padding: 8px 15px;
+    width: 288px;
+    height: 40px;
+    
+    /* Типографіка */
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-primary);
+    
+    /* Інтерактивність */
+    cursor: pointer;
+    transition: color var(--transition-base), 
+                border-color var(--transition-base), 
+                background-color var(--transition-base);
+}
+
+/* Стани кнопки */
+.product-button:hover,
+.product-button:focus {
+    color: rgba(17, 57, 22, 0.6);
+    border-color: rgba(17, 57, 22, 0.6);
+}
+
+.product-button:active {
+    color: rgba(3, 10, 6, 0.5);
+    border-color: rgba(3, 10, 6, 0.5);
+}
+
+.product-button:disabled {
+    background-color: rgba(55, 65, 81, 0.2);
+    color: rgba(55, 65, 81, 0.4);
+    border-color: rgba(55, 65, 81, 0.2);
+    cursor: not-allowed;
+}
+
+/*
+==================================================
+  АДАПТИВНА ВЕРСТКА
+  Точки перелому: 320px, 768px, 1440px
+==================================================
+*/
+
+/* ============================================
+   ЕКСТРЕМАЛЬНО МАЛІ ЕКРАНИ (< 320px)
+   ============================================ */
+@media (max-width: 319px) {    
+    .container {
+        padding: 16px 8px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .product-card {
+        width: 100%;
+        max-width: 280px;
+        min-height: 480px;
+    }
+    
+    .product-image-wrapper {
+        height: 320px;
+    }
+}
+
+/* ============================================
+   МОБІЛЬНІ ПРИСТРОЇ (320px - 767px)
+   ============================================ */
+@media (min-width: 320px) and (max-width: 767px) {
+    /* Контейнер */
+    .container {
+        padding: 24px 16px;
+    }
+
+    /* Сітка товарів - вертикальний стовпець */
+    .products-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    /* Типографіка */
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+
+    /* Карточка товару */
+    .product-card {
+        width: 100%;
+        max-width: 288px;
+        min-height: 505px;
+    }
+
+    /* Зображення */
+    .product-image-wrapper {
+        height: 346px;
+    }
+
+    /* Кнопка */
+    .product-button {
+        width: 100%;
+        max-width: 256px;
+        margin-top: 8px;
+    }
+
+    /* Контент карточки */
+    .product-info {
+        flex-grow: 1;
+        min-height: 113px;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+}
+
+/* ============================================
+   ПЛАНШЕТИ (768px - 1439px)
+   ============================================ */
+@media (min-width: 768px) and (max-width: 1439px) {
+    /* Контейнер */
+    .container {
+        padding: 48px 32px;
+    }
+
+    /* Типографіка */
+    .section-title {
+        font-size: 36px;
+        margin-bottom: 32px;
+    }
+
+    /* Сітка товарів - 2 колонки */
+    .products-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    /* Карточка товару */
+    .product-card {
+        width: 340px;
+        min-height: 593px;
+    }
+
+    /* Зображення */
+    .product-image-wrapper {
+        width: 100%;
+        height: 408px;
+    }
+
+    /* Кнопка */
+    .product-button {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 8px;
+    }
+
+    /* Контент карточки */
+    .product-info {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: center;
+        padding: 0 16px;
+        min-height: 113px;
+        box-sizing: border-box;
+    }
+}
+/* ============================================
+   ДЕСКТОП (≥ 1440px)
+   ============================================ */
+@media (min-width: 1440px) {
+    /* Сітка товарів - CSS Grid 4 колонки */
+    .products-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        justify-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    /* Карточка товару */
+    .product-card {
+        width: 310px;
+    }
+
+    /* Кнопка - скидаємо margin-top з планшетної версії */
+    .product-button {
+        margin-top: 0 !important;
+    }
+}
+
+/*
+==================================================
+  ДОСТУПНІСТЬ ТА A11Y
+==================================================
+*/
+
+/* Фокус для клавіатурної навігації */
+.product-button:focus-visible {
+    outline: 3px solid rgba(3, 10, 6, 0.15);
+    outline-offset: 2px;
+}
