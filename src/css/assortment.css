@@ -8,6 +8,10 @@
 ==================================================
 */
 
+/* ============================================
+   ТИПОГРАФІКА
+   ============================================ */
+
 /* Заголовок секції */
 .section-title {
     font-family: "Comfortaa", sans-serif;
@@ -113,28 +117,18 @@
 
 /* Кнопка "Купити" (mobile-first) */
 .product-button {
-    /* Зовнішній вигляд */
-    background-color: transparent;
-    border: 1px solid var(--color-primary);
-    border-radius: 6px;
-    
-    /* Розміри та відступи */
-    padding: 8px 15px;
-    width: 100%;
-    max-width: 256px;
-    height: 40px;
-    margin-top: 8px;
-    
-    /* Типографіка */
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--color-primary);
-    
-    /* Інтерактивність */
-    cursor: pointer;
-    transition: color var(--transition-base), 
-                border-color var(--transition-base), 
-                background-color var(--transition-base);
+border: 1px solid #030a06;
+border-radius: 6px;
+padding: 8px 20px;
+width: 310px;
+height: 40px;
+
+font-weight: 400;
+font-size: 16px;
+line-height: 1.6;
+color: #030a06;
+
+
 }
 
 /* Стани кнопки */
