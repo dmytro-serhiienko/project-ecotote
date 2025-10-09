@@ -34,6 +34,7 @@
     flex-direction: column;
     gap: 64px !important;
     align-items: center;
+    justify-content: center;
     width: 100%;
     box-sizing: border-box;
 }
