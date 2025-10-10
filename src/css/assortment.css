@@ -1,1 +1,178 @@
-/* ТВІЙ КОД */
+/* Заголовок секції */
+.section-title {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* Сітка товарів (mobile-first: вертикальний стовпець) */
+.products-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Основна структура карточки (mobile-first) */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  max-width: 310px;
+  min-height: 530px;
+}
+
+/* Контейнер зображення (mobile-first) */
+
+/* Зображення товару */
+.product-image {
+  border-radius: 32px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Контейнер інформації про товар (mobile-first) */
+
+/* Назва товару */
+.product-title {
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Опис товару */
+.product-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 8px;
+  max-width: 280px;
+}
+
+/* Ціна товару */
+.product-price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Кнопка "Купити" (mobile-first) */
+.product-button {
+  border: 1px solid #030a06;
+  border-radius: 6px;
+  padding: 8px 20px;
+  width: 288px;
+  height: 40px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #030a06;
+  background: transparent;
+}
+
+/* Стани кнопки */
+.product-button:hover,
+.product-button:focus {
+  color: rgba(17, 57, 22, 0.6);
+  border-color: rgba(17, 57, 22, 0.6);
+}
+
+.product-button:active {
+  color: rgba(3, 10, 6, 0.5);
+  border-color: rgba(3, 10, 6, 0.5);
+}
+
+.product-button:disabled {
+  background-color: rgba(55, 65, 81, 0.2);
+  color: rgba(55, 65, 81, 0.4);
+  border-color: rgba(55, 65, 81, 0.2);
+  cursor: not-allowed;
+}
+
+/* ============================================
+   ПЛАНШЕТИ (768px і більше)
+   ============================================ */
+@media only screen and (min-width: 768px) {
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+
+  /* Сітка товарів - 2 колонки */
+  .products-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  /* Карточка товару */
+  .product-card {
+    width: 340px;
+    max-width: none;
+    min-height: 593px;
+  }
+
+  /* Зображення */
+  .product-image-wrapper {
+    height: 408px;
+  }
+
+  /* Кнопка */
+  .product-button {
+    width: 340px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* Типографіка */
+  .section-title {
+    font-size: 48px;
+  }
+
+  /* Сітка товарів - CSS Grid 4 колонки */
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 24px;
+    row-gap: 64px;
+    justify-items: center;
+  }
+
+  /* Карточка товару */
+  .product-card {
+    width: 310px;
+    height: 557px;
+  }
+
+  /* Кнопка */
+  .product-button {
+    width: 310px;
+    max-width: 310px;
+    margin-top: auto;
+  }
+}
+
+/* Фокус для клавіатурної навігації */
+.product-button:focus-visible {
+  outline: 3px solid rgba(3, 10, 6, 0.15);
+  outline-offset: 2px;
+}
