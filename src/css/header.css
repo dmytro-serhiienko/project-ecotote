@@ -91,7 +91,8 @@
 
   .main-nav-link:active,
   .contacts-link:active {
-    color: #3ac04c;
+    color: #113916;
+    opacity: 0.6;
   }
 
   .main-nav-link.disabled,
@@ -123,7 +124,8 @@
 
   .main-nav-link:active::after,
   .contacts-link:active::after {
-    background-color: #3ac04c;
+    background-color: #113916;
+    opacity: 0.6;
   }
 
   .contacts {

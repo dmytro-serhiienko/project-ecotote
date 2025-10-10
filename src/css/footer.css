@@ -175,7 +175,8 @@
 
   .footer__nav-link:active,
   .footer__address:active {
-    color: #3ac04c;
+    color: #113916;
+    opacity: 0.6;
   }
 
   .footer__nav-link:disabled,
@@ -207,16 +208,27 @@
 
   .footer__nav-link:active::after,
   .footer__address:active::after {
-    background-color: #3ac04c;
+    background-color: #113916;
+    opacity: 0.6;
   }
 
   .footer__social-icon {
-    /* ← ПРОБЛЕМА! ДВОЙНОЕ ОБЪЯВЛЕНИЕ ОДНОГО ЭЛЕМЕНТА! */
+    background: transparent;
     transition: all 0.3s ease;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.5);
+    }
   }
 
-  .footer__social-link:hover .footer__social-icon,
-  .footer__social-link:focus .footer__social-icon {
-    scale: 1.2;
+  .footer__social-list .footer__social-item:nth-child(1) svg:hover {
+    fill: #efcf76;
+  }
+  .footer__social-list .footer__social-item:nth-child(2) svg:hover {
+    fill: #2d65bc;
+  }
+  .footer__social-list .footer__social-item:nth-child(3) svg:hover {
+    fill: #ea333e;
   }
 }
