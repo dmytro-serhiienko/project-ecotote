@@ -1,12 +1,7 @@
-.advantages-container {
-  padding: 32px 0;
-}
-
 .advantages-subtitle {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
-  color: #030a06;
   margin-bottom: 12px;
 }
 
@@ -16,16 +11,13 @@
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.01em;
-  color: #030a06;
   margin-bottom: 20px;
 }
 
 .advantages-desc {
-  font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-  color: #030a06;
   margin-bottom: 48px;
 }
 
@@ -35,21 +27,14 @@
   font-size: 24px;
   line-height: 1.4;
   letter-spacing: 0.01em;
-  color: #030a06;
   margin-top: 8px;
   margin-bottom: 4px;
 }
 
-.part-crosshead {
-  display: block;
-}
-
 .advantages-text {
-  font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-  color: #030a06;
 }
 
 .advantages-list {
@@ -65,10 +50,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .advantages-container {
-    padding: 64px 0;
-  }
-
   .advantages-subtitle {
     margin-bottom: 16px;
   }
@@ -122,10 +103,6 @@
     margin-bottom: 24px;
   }
 
-  .part-subhead {
-    display: block;
-  }
-
   .advantages-list {
     flex-wrap: nowrap;
     gap: 24px;
@@ -136,3 +113,4 @@
     width: calc((100% - 24px) / 3);
   }
 }
+
