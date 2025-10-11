@@ -43,25 +43,23 @@
       </form>
     </div>
     <picture>
-      <!-- Десктоп от 1158px -->
       <source
         srcset="/img/support-desktop-1x.jpg 1x, /img/support-desktop-2x.jpg 2x"
-        media="(min-width: 1158px)"
+        media="(min-width: 1440px)"
       />
-      <!-- Планшет от 768px -->
       <source
         srcset="/img/support-tablet-1x.jpg 1x, /img/support-tablet-2x.jpg 2x"
         media="(min-width: 768px)"
       />
-      <!-- Мобилка до 767px -->
       <source
         srcset="/img/support-mobile-1x.jpg 1x, /img/support-mobile-2x.jpg 2x"
-        media="(max-width: 767px)"
+        media="(min-width: 320px)"
       />
       <img
         class="support-img"
         src="/img/support-desktop-2x.jpg"
         alt="support-desktop"
+        loading="lazy"
         width="645"
       />
     </picture>
