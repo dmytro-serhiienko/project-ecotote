@@ -1,5 +1,75 @@
 <section class="support section">
   <div class="container">
-    <!-- ТВІЙ КОД -->
+    <div class="support-content">
+      <h2 class="support-title">Залишились питання? Зв'яжіться з нами!</h2>
+      <p class="support-subtitle">Ми тут, щоб допомогти!</p>
+      <form class="support-form">
+        <label class="support-label" for="name"
+          >Ім'я
+          <input
+            class="support-input"
+            id="name"
+            type="text"
+            name="Ім'я"
+            placeholder="Іван"
+            minlength="5"
+            maxlength="64"
+            required
+          />
+        </label>
+        <p class="input-error">Імʼя має містити від 5 до 64 символів</p>
+
+        <label class="support-label" for="email"
+          >Електронна пошта
+          <input
+            class="support-input"
+            id="email"
+            type="email"
+            name="Електронна пошта"
+            placeholder="hello@ecotote.com"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            required
+          />
+        </label>
+        <p class="input-error">Невірний email, спробуйте ще раз</p>
+
+        <label class="support-label" for="user-comment"
+          >Повідомлення
+          <textarea
+            class="support-textarea"
+            id="user-comment"
+            name="Повідомлення"
+            placeholder="Введіть своє повідомлення..."
+            maxlength="500"
+            required
+          ></textarea>
+        </label>
+
+        <button class="support-btn" type="submit">Надіслати</button>
+      </form>
+    </div>
+    <picture>
+      <!-- Десктоп от 1158px -->
+      <source
+        srcset="/img/support-desktop-1x.jpg 1x, /img/support-desktop-2x.jpg 2x"
+        media="(min-width: 1158px)"
+      />
+      <!-- Планшет от 768px -->
+      <source
+        srcset="/img/support-tablet-1x.jpg 1x, /img/support-tablet-2x.jpg 2x"
+        media="(min-width: 768px)"
+      />
+      <!-- Мобилка до 767px -->
+      <source
+        srcset="/img/support-mobile-1x.jpg 1x, /img/support-mobile-2x.jpg 2x"
+        media="(max-width: 767px)"
+      />
+      <img
+        class="support-img"
+        src="/img/support-desktop-2x.jpg 2x"
+        alt="support-desktop"
+        width="645"
+      />
+    </picture>
   </div>
 </section>
