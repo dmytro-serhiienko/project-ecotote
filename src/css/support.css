@@ -70,10 +70,6 @@
   padding: 12px;
 }
 
-.support-btn {
-  margin-top: 24px;
-}
-
 .support-input::placeholder,
 .support-textarea::placeholder {
   font-weight: 400;
@@ -93,7 +89,7 @@
 }
 
 .support-input,
-.support-textarea {
+.support-textareva {
   border: 1px solid rgba(3, 10, 6, 0.15);
   background: rgba(3, 10, 6, 0.05);
   transition: border-color 0.3s ease, background 0.3s ease;
