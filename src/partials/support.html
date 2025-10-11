@@ -1,11 +1,11 @@
-<section class="support-section">
+<section class="support section">
   <div class="container">
     <div class="support-content">
       <h2 class="support-title">Залишились питання? Зв'яжіться з нами!</h2>
       <p class="support-subtitle">Ми тут, щоб допомогти!</p>
-      <ul class="support-list">
-        <li class="support-list-item">
-          <label class="support-label" for="name">Ім'я</label>
+      <form class="support-form">
+        <label class="support-label" for="name"
+          >Ім'я
           <input
             class="support-input"
             id="name"
@@ -16,10 +16,11 @@
             maxlength="64"
             required
           />
-          <p class="input-error">Імʼя має містити від 5 до 64 символів</p>
-        </li>
-        <li class="support-list-item">
-          <label class="support-label" for="email">Електронна пошта</label>
+        </label>
+        <p class="input-error">Імʼя має містити від 5 до 64 символів</p>
+
+        <label class="support-label" for="email"
+          >Електронна пошта
           <input
             class="support-input"
             id="email"
@@ -29,20 +30,23 @@
             pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
             required
           />
-          <p class="input-error">Невірний email, спробуйте ще раз</p>
-        </li>
-        <li class="support-list-item">
-          <label class="support-label" for="user-comment">Повідомлення</label>
+        </label>
+        <p class="input-error">Невірний email, спробуйте ще раз</p>
+
+        <label class="support-label" for="user-comment"
+          >Повідомлення
           <textarea
             class="support-textarea"
             id="user-comment"
             name="Повідомлення"
             placeholder="Введіть своє повідомлення..."
             maxlength="500"
+            required
           ></textarea>
-        </li>
-      </ul>
-      <button class="support-btn" type="submit">Надіслати</button>
+        </label>
+
+        <button class="support-btn" type="submit">Надіслати</button>
+      </form>
     </div>
     <picture>
       <!-- Десктоп от 1158px -->
