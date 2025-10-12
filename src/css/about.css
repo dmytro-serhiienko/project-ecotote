@@ -1,0 +1,61 @@
+.eco-section{
+ background-image: linear-gradient(
+    rgba(0, 0, 0, 0.4)
+    rgba(0, 0, 0, 0.4)
+        ),
+        url(../img/about/about-mob-1x.jpg);
+        padding: 64px 16px;
+}
+.eco-section__subtitle{
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+font-size: 16px;
+line-height: 1.5;
+text-align: center;
+color: #fff;
+}
+.eco-section__title{
+    font-family: "Comfortaa", sans-serif;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.2;
+letter-spacing: 0.01em;
+text-align: center;
+color: #fff;
+}
+.eco-section__text{
+    font-family: "Fira Sans", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.6;
+text-align: center;
+color: #fff;
+}   
+@media screen and (min-width: 768px){
+    .eco-section{
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4)
+            rgba(0, 0, 0, 0.4)
+        ), 
+        url(../img/about/about-tab-1x.jpg ),
+        url(../img/about/about-tab-2x.jpg);
+        padding: 80px 32px;
+    }
+    .eco-section__text{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 1440px){
+    .eco-section{
+        padding: 112px 64px;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4)
+            rgba(0, 0, 0, 0.4)
+        ), 
+        url(../img/about/about-comp-1x.jpg),
+        url(../img/about/about-comp-2x.jpg);
+    }
+    .eco-section__title{
+        font-size: 56px;
+    }
+}
