@@ -186,6 +186,7 @@
     transition: all 0.5s ease;
 
     &:hover {
+      transform: scale(1.5);
       fill: rgb(74, 245, 97);
     }
   }
