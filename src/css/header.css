@@ -1,7 +1,16 @@
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   background-color: #75d281;
   padding: 14px 0;
+}
+
+/* Отступ для контента под фиксированным header */
+body {
+  padding-top: 60px; /* Примерная высота header + отступы */
 }
 
 .header > .container {
@@ -45,6 +54,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+
   .header > .container {
     padding-left: 32px;
     padding-right: 28px;
@@ -52,6 +65,17 @@
 }
 
 @media screen and (min-width: 1440px) {
+  body {
+    padding-top: 0;
+  }
+
+  .header {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+  }
+
   .header > .container {
     padding: 0px 64px;
     align-items: center;
