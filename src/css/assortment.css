@@ -18,19 +18,11 @@
   box-sizing: border-box;
 }
 
-/*.product-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0;
-  width: 100%;
-  max-width: 310px;
-  min-height: 530px;}*/
 .product-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1 1 calc(100% - 40px); /* базовая ширина для одной колонки */
+  flex: 1 1 calc(100% - 40px); /* базова ширина */
   max-width: 400px;
   min-width: 260px;
   box-sizing: border-box;
@@ -74,22 +66,9 @@
   margin-bottom: 30px;
 }
 
-/*.product-button {
-  border: 1px solid #030a06;
-  border-radius: 6px;
-  padding: 8px 20px;
-  width: 288px;
-  height: 40px;
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #030a06;
-  background: transparent;*/
-
 .product-button {
   display: inline-block;
-  text-decoration: none; /* убираем подчёркивание */
+  text-decoration: none;
   text-align: center;
   border: 1px solid #030a06;
   border-radius: 6px;
@@ -100,22 +79,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-  color: #030a06;
   background: transparent;
-  cursor: pointer;
   transition: all 0.3s ease;
-}
-
-& :disabled {
-  background-color: rgba(55, 65, 81, 0.2);
-  color: rgba(55, 65, 81, 0.4);
-  border-color: rgba(55, 65, 81, 0.2);
-  cursor: not-allowed;
-}
-.product-button:hover,
-.product-button:focus {
-  transform: scale(1.02);
-  opacity: 0.5;
 }
 
 @media only screen and (min-width: 768px) {
@@ -133,11 +98,6 @@
 
     justify-content: center;
   }
-
-  /*.product-card {
-    width: 340px;
-    max-width: none;
-    min-height: 593px;}*/
 
   .product-card {
     flex: 1 1 calc(50% - 24px); /* две карточки в ряд */
@@ -159,7 +119,6 @@
   }
 
   .assortment-list {
-    /*display: grid;*/
     grid-template-columns: repeat(4, 1fr);
     column-gap: 24px;
     row-gap: 64px;
@@ -167,13 +126,8 @@
     display: flex;
   }
 
-  /*.product-card {
-    width: 310px;
-    height: 557px;}*/
-
   .product-card {
-    flex: 1 1 calc(25% - 24px); /* четыре карточки в ряд */
-    height: auto;
+    flex: 1 1 calc(25% - 24px);
     max-width: 340px;
   }
 
@@ -205,6 +159,13 @@
       border: 1px solid #113916;
       color: #113916;
       opacity: 0.5;
+    }
+
+    & :disabled {
+      background-color: rgba(55, 65, 81, 0.2);
+      color: rgba(55, 65, 81, 0.4);
+      border-color: rgba(55, 65, 81, 0.2);
+      cursor: not-allowed;
     }
   }
 }

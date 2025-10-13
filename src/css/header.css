@@ -144,7 +144,8 @@
   top: 100%;
   left: 0;
   width: 100%;
-  height: 604px;
+  height: 100vh;
+  /* height: 604px; */
   z-index: 999;
   visibility: hidden;
   opacity: 0;
@@ -165,7 +166,7 @@ body.modal-open {
 
 .mobile-modal-wrap {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 32px 20px;
   display: flex;
   flex-direction: column;
