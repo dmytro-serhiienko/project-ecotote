@@ -29,11 +29,16 @@
   padding: 12px 24px;
   width: 288px;
   height: 50px;
-  margin-bottom: 24px;
+  display: block;
+  text-align: center;
 }
 
 .hero-image-wrapper > picture img {
   border-radius: 40px;
+}
+
+.hero-content {
+  margin-bottom: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -65,10 +70,6 @@
   }
 
   .hero-button {
-    background: #030a06;
-    border: 1px solid #030a06;
-    border-radius: 6px;
-    padding: 12px 24px;
     width: 148px;
     height: 50px;
     white-space: nowrap;
