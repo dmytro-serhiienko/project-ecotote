@@ -1,1 +1,102 @@
-/* ТВІЙ КОД */
+.hero {
+  padding: 64px 0;
+}
+
+.hero-title {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.hero-button {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+  background: #030a06;
+  border: 1px solid #030a06;
+  border-radius: 6px;
+  padding: 12px 24px;
+  width: 288px;
+  height: 50px;
+  margin-bottom: 24px;
+}
+
+.hero-button:hover {
+  background-color: #333333;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+  display: block;
+}
+
+.hero-image-wrapper > picture img {
+  border-radius: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 32px;
+    padding-bottom: 64px;
+  }
+
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 20px;
+  }
+
+  .hero-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .hero-title {
+    margin-bottom: 0;
+  }
+
+  .hero-description {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+
+  .hero-button {
+    background: #030a06;
+    border: 1px solid #030a06;
+    border-radius: 6px;
+    padding: 12px 24px;
+    width: 148px;
+    height: 50px;
+    white-space: nowrap;
+
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    max-width: 640px;
+  }
+}
