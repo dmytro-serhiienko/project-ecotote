@@ -1,11 +1,9 @@
 .about {
-  /*padding: 0;*/
   background-image: url(../img/about/about-mob-1x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   max-width: 100%;
-  /*height: 348px;*/
   color: #fff;
   display: flex;
   align-items: center;
@@ -18,13 +16,12 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  /*margin-top: 64px;*/
-  /*margin-bottom: 64px;*/
 }
 
 @media screen and (min-width: 320px) and (min-resolution: 2dppx) {
   .about {
     background-image: url(../img/about/about-mob-2x.jpg);
+    padding: 64px 0;
     padding: 64px 0;
   }
 }
@@ -61,10 +58,6 @@
     /*height: 325px;*/
   }
 
-  /*.about > .container {
-    margin-top: 80px;
-    margin-bottom: 80px; }*/
-
   .about-text {
     font-weight: 400;
     font-size: 18px;
@@ -81,13 +74,13 @@
   .about {
     background-image: url(../img/about/about-tab-2x.jpg);
     padding: 80px 0;
+    padding: 80px 0;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .about {
     background-image: url(../img/about/about-comp-1x.jpg);
-    /*height: 462px;*/
     padding-top: 112px;
     padding-bottom: 94px;
   }
