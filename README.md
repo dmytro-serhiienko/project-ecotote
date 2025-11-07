@@ -1,24 +1,46 @@
-# Що я отримав під час виконання цього проєкту
+# 🌿 EcoTote Project
 
-- Реалізація повноцінного проєкту з блоку HTML + CSS
-- Досвід роботи з бандлером Vite
-- Практика командної взаємодії, зокрема при роботі з Git
-- Створення розгалужень та злиття гілок проєкту
-- Вирішення конфліктів при злитті
-- Планування та постановка завдань
-- Робота з інструментом Trello
-- Досвід на позиції Team Lead команди
-- Презентація готового проєкту як Team Lead
+**🔗 Live Demo:**
+[dmytro-serhiienko.github.io/project-EcoTote](https://dmytro-serhiienko.github.io/project-EcoTote/)
 
+---
 
-# What I Gained While Working on This Project
+## 📄 Description
 
-- Implementation of a complete HTML + CSS project
-- Experience working with the Vite bundler
-- Team collaboration skills, including working with Git
-- Creating branches and merging project changes
-- Resolving merge conflicts
-- Experience in task planning and management
-- Working with Trello
-- Team Lead experience
-- Presenting the final project as a Team Lead
+This is a **desktop-first team project** focused on building a full HTML + CSS
+website.  
+The project emphasizes teamwork, project management, and hands-on development
+skills.
+
+Key highlights:
+
+- 🖥️ **Full HTML + CSS implementation** — building the website layout and styles
+- ⚡ **Vite bundler** — experience working with modern development tooling
+- 👥 **Team collaboration** — working with Git, creating branches, merging
+  changes, and resolving conflicts
+- 📋 **Task management** — planning and tracking progress using Trello
+- 🏅 **Team Lead experience** — coordinating the team and presenting the final
+  project
+
+---
+
+## 🧰 Technologies Used
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=fff)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=fff)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=fff)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=fff)
+
+- **HTML5 & CSS3** — semantic markup and responsive styling
+- **Vite** — modern project bundling and development workflow
+- **Git & GitHub** — branch management, merges, and conflict resolution
+- **Project management** — Trello for tasks and progress tracking
+- **Team coordination** — leading the team and presenting the project outcome
+
+---
+
+## 📱 Note on Responsiveness
+
+This website is **optimized for desktop screens**, with the main layout designed
+for large screens.  
+Mobile and tablet views are secondary and not fully adapted.
